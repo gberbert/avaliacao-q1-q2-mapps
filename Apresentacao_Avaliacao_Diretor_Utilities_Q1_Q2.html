@@ -132,6 +132,7 @@
     }
 
     .btn-nav {
+      white-space: nowrap;
       background: var(--bg-glass);
       border: 1px solid var(--border-color);
       color: var(--text-main);
@@ -382,6 +383,7 @@
     }
 
     table.data-table th {
+      white-space: nowrap;
       background: rgba(255, 255, 255, 0.03);
       color: var(--text-muted);
       font-weight: 600;
@@ -391,6 +393,7 @@
     }
 
     table.data-table td {
+      white-space: nowrap;
       padding: 12px 14px;
       border-bottom: 1px solid var(--border-color);
       color: var(--text-main);
@@ -410,6 +413,7 @@
     }
 
     .badge-status {
+      white-space: nowrap;
       display: inline-block;
       padding: 3px 8px;
       border-radius: 9999px;
@@ -653,7 +657,8 @@
     /* Print Optimization */
     @media print {
       body { background: white; color: black; }
-      .topbar, .presenter-bar, .progress-bar-container, .btn-nav { display: none !important; }
+      .topbar, .presenter-bar, .progress-bar-container, .btn-nav {
+      white-space: nowrap; display: none !important; }
       .deck-viewport { margin: 0; padding: 0; }
       .slide-container { display: block !important; page-break-after: always; padding: 20px; }
       .glass-panel, .metric-card { box-shadow: none; border: 1px solid #ccc; background: #fff !important; }
@@ -675,7 +680,7 @@
 
     <div class="nav-actions">
       <button class="btn-nav" id="btn-theme" title="Alternar tema claro/escuro">🌓 Tema</button>
-      <button class="btn-nav" id="btn-notes" title="Abrir notas do apresentador (Pressione 'N')">🎙️ Notas (<kbd>N</kbd>)</button>
+      <button class="btn-nav" id="btn-notes" title="Abrir Parecer Executivo do Diretor (Pressione 'P')">📋 Parecer (<kbd>N</kbd>)</button>
       <button class="btn-nav" id="btn-prev" title="Slide Anterior (Seta Esquerda)">← Anterior</button>
       <span class="slide-counter" id="slide-num">01 / 10</span>
       <button class="btn-nav btn-primary-action" id="btn-next" title="Próximo Slide (Seta Direita / Espaço)">Próximo →</button>
@@ -1438,7 +1443,7 @@
     <div class="presenter-header" id="presenter-header">
       <div class="presenter-title">
         <span>🎙️</span>
-        <span>Notas do Apresentador & Roteiro Oral (Slide <span id="notes-slide-num">1</span>)</span>
+        <span>Parecer Executivo do Diretor de Prática (Slide <span id="notes-slide-num">1</span>)</span>
       </div>
       <div style="font-size: 0.8rem; color: var(--text-muted);">
         Clique para expandir / ocultar • Tecla <kbd>N</kbd>

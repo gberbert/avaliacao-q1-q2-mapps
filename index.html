@@ -125,18 +125,22 @@
       align-items: center;
       gap: 12px;
       text-decoration: none;
+      flex-shrink: 0;
+      white-space: nowrap;
     }
 
     /* SVG NTT DATA Logo */
     .ntt-logo-svg {
       height: 26px;
       fill: var(--text-white);
+      flex-shrink: 0;
     }
 
     .brand-divider {
       width: 1px;
       height: 24px;
       background: rgba(255, 255, 255, 0.2);
+      flex-shrink: 0;
     }
 
     .brand-unit {
@@ -146,18 +150,21 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       line-height: 1.2;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .brand-unit span {
       display: block;
       color: var(--ntt-cyan);
       font-size: 0.7rem;
+      white-space: nowrap;
     }
 
     .nav-menu {
       display: none;
       align-items: center;
-      gap: 28px;
+      gap: 16px;
       list-style: none;
     }
 
@@ -168,12 +175,13 @@
     .nav-item a {
       color: rgba(255, 255, 255, 0.85);
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 500;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 4px;
       transition: var(--transition);
+      white-space: nowrap;
     }
 
     .nav-item a:hover, .nav-item a.active {
@@ -188,7 +196,9 @@
     .header-actions {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 14px;
+      flex-shrink: 0;
+      white-space: nowrap;
     }
 
     .icon-btn {
@@ -201,6 +211,7 @@
       gap: 6px;
       font-size: 0.85rem;
       transition: var(--transition);
+      white-space: nowrap;
     }
 
     .icon-btn:hover {
@@ -210,14 +221,18 @@
     .btn-contact {
       background: var(--ntt-blue-light);
       color: white;
-      padding: 9px 22px;
+      padding: 8px 18px;
       border-radius: 9999px;
-      font-size: 0.875rem;
+      font-size: 0.85rem;
       font-weight: 600;
       text-decoration: none;
       transition: var(--transition);
       border: none;
       cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      display: inline-block;
+      text-align: center;
     }
 
     .btn-contact:hover {
@@ -693,12 +708,13 @@
       display: inline-block;
       font-size: 0.75rem;
       font-weight: 700;
-      padding: 2px 8px;
+      padding: 3px 10px;
       border-radius: 9999px;
+      white-space: nowrap;
     }
 
-    .badge-green { background: rgba(16, 185, 129, 0.15); color: #047857; }
-    .badge-blue { background: rgba(0, 102, 204, 0.15); color: var(--ntt-blue); }
+    .badge-green { background: rgba(16, 185, 129, 0.15); color: #047857; white-space: nowrap; }
+    .badge-blue { background: rgba(0, 102, 204, 0.15); color: var(--ntt-blue); white-space: nowrap; }
 
     /* Tables */
     .table-responsive {
@@ -721,15 +737,24 @@
     table.corporate-table th {
       background: #001026;
       color: white;
-      padding: 16px 20px;
+      padding: 14px 18px;
       font-weight: 600;
       letter-spacing: 0.03em;
+      white-space: nowrap;
     }
 
     table.corporate-table td {
-      padding: 16px 20px;
+      padding: 14px 18px;
       border-bottom: 1px solid var(--border-light);
       color: var(--text-dark);
+    }
+
+    table.corporate-table td:not(:last-child) {
+      white-space: nowrap;
+    }
+
+    table.corporate-table td:last-child {
+      min-width: 240px;
     }
 
     table.corporate-table tr:hover td {
@@ -1153,7 +1178,7 @@
           <li class="nav-item"><a href="#case-cpfl">Framework IA <span class="chevron">▼</span></a></li>
           <li class="nav-item"><a href="#lideranca">Governança <span class="chevron">▼</span></a></li>
           <li class="nav-item"><a href="#pipeline">Pipeline 2027 <span class="chevron">▼</span></a></li>
-          <li class="nav-item"><a href="#defesa">Q&A Defesa</a></li>
+          <li class="nav-item"><a href="#esclarecimentos">Esclarecimentos</a></li>
         </ul>
       </nav>
 
@@ -1662,14 +1687,14 @@
     </div>
   </section>
 
-  <!-- SECTION: EXECUTIVE DEFENSE Q&A -->
-  <section class="section-qa" id="defesa">
+  <!-- SECTION: ESCLARECIMENTOS ESTRATÉGICOS (FAQ DO AVALIADOR) -->
+  <section class="section-qa" id="esclarecimentos">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Comitê Executivo</span>
-        <h2 class="section-title">Matriz de Defesa: Perguntas Difíceis da Banca</h2>
+        <span class="section-tag">Governança & FAQ Executivo</span>
+        <h2 class="section-title">Esclarecimentos Estratégicos aos Principais Temas de Avaliação</h2>
         <p class="section-subtitle">
-          Racional estratégico fundamentado em dados para sustentar a avaliação com máxima segurança.
+          Racional fundamentado em dados auditados sobre os pilares de receita, margem, concorrência e previsibilidade para o comitê.
         </p>
       </div>
 
@@ -1677,17 +1702,17 @@
         
         <div class="accordion-item">
           <div class="accordion-header">
-            <span>1. A receita caiu 36% vs. Budget. Por que isso não foi previsto em 2025?</span>
+            <span>1. Qual foi o impacto da decisão regulatória das elétricas sobre a receita de FY26?</span>
             <span class="acc-icon">▼</span>
           </div>
           <div class="accordion-body">
-            Em 2025, o consenso regulatório e econômico apontava que as distribuidoras antecipariam os sistemas para 2026. O setor elétrico tomou uma decisão coletiva e conservadora de esperar 2027. Diante disso, nossa diretoria protegeu o resultado: não compramos receita sem margem e entregamos rentabilidade relativa superior à meta (30,76% entregue vs. 29,45% orçado).
+            Em 2025, o consenso regulatório e econômico apontava que as distribuidoras antecipariam os sistemas para 2026. O setor elétrico tomou uma decisão coletiva e conservadora de postergar o início das operações para 2027. Diante disso, nossa diretoria protegeu o resultado: não compramos receita sem margem e entregamos rentabilidade relativa superior à meta (30,76% entregue vs. 29,45% orçado), com a demanda plenamente represada para o próximo ciclo.
           </div>
         </div>
 
         <div class="accordion-item">
           <div class="accordion-header">
-            <span>2. Como sustentar o Win Rate de 30-40% se os concorrentes cobram 40% a menos?</span>
+            <span>2. Como a diretoria sustenta a competitividade comercial frente a concorrentes 40% mais baratos?</span>
             <span class="acc-icon">▼</span>
           </div>
           <div class="accordion-body">
@@ -1697,7 +1722,7 @@
 
         <div class="accordion-item">
           <div class="accordion-header">
-            <span>3. O que ocorreu na conta EDP para fechar com margem de -10% no BestGuess?</span>
+            <span>3. Qual foi o diagnóstico e o plano de ação adotado para a conta EDP?</span>
             <span class="acc-icon">▼</span>
           </div>
           <div class="accordion-body">
@@ -1707,11 +1732,11 @@
 
         <div class="accordion-item">
           <div class="accordion-header">
-            <span>4. Qual a garantia de que o pipeline de R$ 5,4M se converterá no H2?</span>
+            <span>4. Qual é o nível de previsibilidade e conversão esperado para o pipeline de R$ 5,4M?</span>
             <span class="acc-icon">▼</span>
           </div>
           <div class="accordion-body">
-            Temos propostas avançadas na mesa decorrentes diretamente do sucesso do projeto de contingência na CPFL e novas demandas em Neoenergia e Enel. Com nosso win rate histórico de 35%, o pipe atual nos garante tração imediata, enquanto o avanço regulatório do mercado livre começará a destravar contratações prévias já na virada do ano fiscal.
+            Temos propostas avançadas na mesa decorrentes diretamente do sucesso do projeto de contingência na CPFL e novas demandas em Neoenergia e Enel. Com nosso win rate histórico de 30% a 40%, o pipe atual nos garante tração imediata de R$ 1,6M a R$ 2,2M no H2, enquanto o avanço regulatório do mercado livre começará a destravar contratações prévias já na virada do ano fiscal.
           </div>
         </div>
 
@@ -1719,23 +1744,53 @@
     </div>
   </section>
 
-  <!-- LIVE PRESENTER DRAWER (Atalho N) -->
+  <!-- DECLARAÇÃO EXECUTIVA DO DIRETOR (Para o Avaliador) -->
   <div class="presenter-tray">
-    <button class="btn-tray-toggle" id="btn-tray-open">
-      <span>🎙️</span> Roteiro Oral da Avaliação (<kbd>N</kbd>)
+    <button class="btn-tray-toggle" id="btn-tray-open" title="Abrir Parecer Executivo do Diretor">
+      <span>📋</span> Parecer do Diretor (<kbd>P</kbd>)
     </button>
   </div>
 
   <div class="tray-modal" id="tray-modal">
     <div class="tray-title">
-      <span>Roteiro de Fala para a Banca</span>
-      <button class="tray-close" id="btn-tray-close">✕</button>
+      <span>Parecer Executivo do Diretor de Prática</span>
+      <button class="tray-close" id="btn-tray-close" title="Fechar">✕</button>
     </div>
     <div class="tray-content">
-      <p style="margin-bottom: 10px;"><strong>Abertura Executiva:</strong> "Boa tarde a todos. Trago a prestação de contas da Diretoria de Utilities em Modern Applications para o H1 do FY26. Foi um semestre marcado por forte pressão setorial exógena, mas no qual respondemos com excelência operacional, superando nossa meta de rentabilidade percentual (30,76% entregue vs. 29,45% budget) e desenvolvendo um diferencial competitivo com IA que pavimenta nosso crescimento para o ciclo de 2027."</p>
-      <p style="margin-bottom: 10px;"><strong>Cenário & Efeito 2027:</strong> "A decisão das distribuidoras de energia de empurrar a abertura de mercado para 2027 retirou o volume esperado de 2026, com o desvio concentrado no Q2. Essa demanda está represada e gerará uma corrida contrarrelógio no início do próximo ano."</p>
-      <p style="margin-bottom: 10px;"><strong>Inovação com IA:</strong> "Nosso grande marco tecnológico foi o desenvolvimento do Framework de IA. No projeto Contingência da CPFL, entregamos com +10% de margem acima do planejado e antecedência no prazo. Esse modelo agora é a nossa esteira padrão para qualquer novo DI."</p>
-      <p><strong>Liderança e Futuro:</strong> "Capacitamos nossos líderes em governança financeira e SAP, com destaque para o William, e temos um pipeline qualificado de R$ 5,4M pronto para capitalizar a virada de 2027."</p>
+      <div style="font-size: 0.75rem; color: var(--ntt-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 0.08em; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px;">
+        Ao Comitê de Avaliação de Desempenho & Liderança Executiva NTT DATA
+      </div>
+      
+      <p style="margin-bottom: 12px;">
+        <strong>Prezado Avaliador,</strong><br>
+        Submeto à sua apreciação os resultados e o direcionamento estratégico da <strong>Diretoria de Utilities & Energy</strong> para a prática de <em>Application Services — Modern Applications (MAPPS)</em>, referentes ao primeiro semestre fiscal de 2026 (Q1 & Q2 FY26).
+      </p>
+
+      <p style="margin-bottom: 12px;">
+        <strong>1. Disciplina e Superação de Margem em Cenário Adverso:</strong><br>
+        Diante da decisão estratégica das distribuidoras elétricas de postergar as contratações da Abertura do Mercado Livre para 2027, enfrentamos uma contração conjuntural de receita no Q2. Nossa resposta foi proteger com rigor a saúde financeira da NTT DATA: <strong>entregamos 30,76% de Margem CMM (e 32,70% em Est M-1), superando a meta orçamentária de 29,45% (+1,32 pp a +3,25 pp)</strong>, e atingimos <strong>32,27% no setor de Energy (+8,86 pp vs. Budget)</strong>.
+      </p>
+
+      <p style="margin-bottom: 12px;">
+        <strong>2. Inovação Operacional e Escala via Inteligência Artificial:</strong><br>
+        Desenvolvemos e colocamos em produção um Framework proprietário de aceleração com IA. O <strong>Projeto Contingência na CPFL</strong> comprovou a eficácia do modelo: entregamos <strong>+10% de margem acima do planejado (32,31% acumulado)</strong>, com entrega antecipada e satisfação máxima do cliente. Esse framework agora está industrializado como esteira padrão para qualquer novo DI.
+      </p>
+
+      <p style="margin-bottom: 12px;">
+        <strong>3. Governança e Formação de Lideranças:</strong><br>
+        Estruturamos nossas lideranças para além do código, capacitando-as em rotinas SAP, gestão de reco e controle físico-financeiro no MS Project. Destaco a atuação protagonista do <strong>William</strong>, fundamental para a estabilização e governança dos contratos.
+      </p>
+
+      <p style="margin-bottom: 12px;">
+        <strong>4. Posicionamento para a Onda Regulatória de 2027:</strong><br>
+        Com um <strong>pipeline qualificado ativo de R$ 5,4M</strong> e win rate histórico de 30% a 40%, estamos prontos para converter entre R$ 1,6M e R$ 2,2M no H2 e capturar com margens premium o afunilamento de fornecedores que o mercado viverá em 2027.
+      </p>
+
+      <div style="border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 10px; margin-top: 14px; font-size: 0.8rem; color: rgba(255, 255, 255, 0.85); line-height: 1.4;">
+        <strong style="color: white;">Gustavo Costa Berbert</strong><br>
+        Diretor de Utilities & Energy | Application Services — Modern Applications (MAPPS)<br>
+        <em>NTT DATA Corporation</em>
+      </div>
     </div>
   </div>
 
@@ -1978,7 +2033,7 @@
     if (btnTrayClose) btnTrayClose.addEventListener('click', toggleTray);
 
     document.addEventListener('keydown', (e) => {
-      if (e.key.toLowerCase() === 'n') {
+      if (e.key.toLowerCase() === 'p' || e.key.toLowerCase() === 'n') {
         toggleTray();
       }
     });
