@@ -44,4 +44,4 @@ Para abrir, basta dar um duplo clique em `Apresentacao_Avaliacao_Diretor_Utiliti
 * **Margem Setor Energy (CPFL + Aegea):** **32,27%** (+8,86 pp vs. Budget de 23,41%).
 * **Case Flagship CPFL (Projeto Contingência):** Receita de R$ 2,17M (+12,6% vs. Budget), Margem R$ de R$ 701,6K (+55,3% vs. Budget) e Margem % de **32,31%** (+8,90 pp), impulsionada pelo **Framework de IA**.
 * **Novas Contas Estratégicas:** Enel (R$ 185,7K e 34,6% de margem) e Aegea (R$ 163,1K e 31,8% de margem).
-* **Pipeline Ativo Qualificado:** **R$ 5,40 M** com Win Rate histórico entre 30% e 40%.
+* **Pipeline Ponderado:** **R$ 5,40 M** (Pipeline Real superior a **R$ 50 M** em propostas ativas na mesa, com Win Rate histórico de 30% a 40% projetando conversão de **~R$ 15 M**).
